@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Notelearn</string>
+    <string name="play_menu">Play</string>
+    <string name="progress_menu">Stats</string>
+    <string name="logo_description">plays a note when clicked</string>
+    <string name="timer_start">30 seconds</string>
+    <string name="score_start">0</string>
+    <string name="default_progress">0</string>
+</resources>

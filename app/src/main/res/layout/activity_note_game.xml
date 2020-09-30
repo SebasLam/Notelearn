@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".NoteGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/timer_start"
+                android:textColor="#3EB489" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/score_start"
+                android:textColor="#3EB489" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/noteImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_border"
+                app:srcCompat="@drawable/g_natural_1" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/a_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="A♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/a_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="A"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/a_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="A♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/b_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="B♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/b_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="B"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/b_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="B♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/c_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="C♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/c_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="C"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/c_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="C♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/d_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="D♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/d_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="D"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/d_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="D♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/e_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="E♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/e_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="E"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/e_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="E♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/f_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="F♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/f_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="F"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/f_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="F♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/g_sharp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="G♯"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/g_natural"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="G"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/g_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mint_button"
+                    android:onClick="checkAnswer"
+                    android:text="G♭"
+                    app:autoSizeTextType="uniform" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

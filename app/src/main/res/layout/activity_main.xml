@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3EB489"
+                android:contentDescription="@string/logo_description"
+                android:onClick="playNote"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/notelearn_circle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#000000"
+            android:onClick="openNoteGame"
+            android:text="@string/play_menu"
+            android:textColor="#3EB489"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/button_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#3EB489"
+            android:onClick="openProgress"
+            android:text="@string/progress_menu"
+            android:textColor="#000000"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
